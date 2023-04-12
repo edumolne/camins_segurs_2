@@ -1,7 +1,7 @@
-# test
+# TEST
 A test repository for publishing my first web page
 
-## README ##
+## Readme ##
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
