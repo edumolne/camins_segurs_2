@@ -6,7 +6,7 @@ Explica l’ **objectiu** de la web i la motivació per fer-la. Vinculació
 amb Geografia.
 
 ## 2 Dades/continguts.
-Una imatge d'exemple: ![alt text](![image](https://user-images.githubusercontent.com/66783984/232810115-4fd78c74-435c-4290-878b-44ed9d02c400.png) "Foto FTG")
+Una imatge d'exemple: ![alt text](![image](https://www.ftg.urv.cat/ca/info-academica/prepara-nou-curs/) "Foto FTG")
 
 D’on s’han tret les:
 - dades
