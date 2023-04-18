@@ -7,7 +7,7 @@ amb Geografia.
 
 ## 2 Dades/continguts.
 Una imatge d'exemple:
-![alt text](./images/imatge-de-prova.jpg "Foto FTG").
+![alt text](./images/imatge-de-prova.jpg "Foto FTG")
 
 D’on s’han tret les:
 - dades
