@@ -1,47 +1,197 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css"><link rel="stylesheet" href="css/L.Control.Locate.min.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="css/MarkerCluster.css">
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css">
+        <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>first_map_qgisweb</title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script><script src="js/L.Control.Locate.min.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
+        <script src="data/l_u_montblanc_1.js"></script>
+        <script src="data/resources_points_2.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:9
+        }).fitBounds([[41.363294389028155,1.1431907418746523],[41.38064836667607,1.1812309097746396]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
+        L.control.locate({locateOptions: {maxZoom: 19}}).addTo(map);
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        map.createPane('pane_GoogleSatelliteHybrid_0');
+        map.getPane('pane_GoogleSatelliteHybrid_0').style.zIndex = 400;
+        var layer_GoogleSatelliteHybrid_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+            pane: 'pane_GoogleSatelliteHybrid_0',
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 9,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 19
+        });
+        layer_GoogleSatelliteHybrid_0;
+        map.addLayer(layer_GoogleSatelliteHybrid_0);
+        function pop_l_u_montblanc_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>fid</strong><br />' + (feature.properties['fid'] !== null ? autolinker.link(feature.properties['fid'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">id</th>\
+                        <td>' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
 
-<!-- This is a comment in HTML. / Açò és un comentari en HTML -->
-<!-- Prova de fer algún canvi o comenta el que entengues del codi. Publica-ho al teu repositori de gh-pages -->
-<!DOCTYPE html>
-<head>
-	<title>Hola mon! (HTML+CSS)</title>
-	<style>
-	/* Açò és un comentari en CSS */
-		body {
-			height: 75vh; width: 90%; margin: auto;
-			background-color: #2D2D2D;
-		}
-		
-		h1 {
-			color: #C26356;
-			font-size: 30px;
-			font-family: Menlo, Monaco, fixed-width;
-		}
-		
-		p {
-			color: white;
-			font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
-		}
-		div {
-			height: 75vh; width: 90%; margin: auto;
-		}
-		/* unvisited link */
-		a:link {
-		  color: red;
-		}
+        function style_l_u_montblanc_1_0() {
+            return {
+                pane: 'pane_l_u_montblanc_1',
+                opacity: 1,
+                color: 'rgba(255,255,255,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 2.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_l_u_montblanc_1');
+        map.getPane('pane_l_u_montblanc_1').style.zIndex = 401;
+        map.getPane('pane_l_u_montblanc_1').style['mix-blend-mode'] = 'normal';
+        var layer_l_u_montblanc_1 = new L.geoJson(json_l_u_montblanc_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_l_u_montblanc_1',
+            layerName: 'layer_l_u_montblanc_1',
+            pane: 'pane_l_u_montblanc_1',
+            onEachFeature: pop_l_u_montblanc_1,
+            style: style_l_u_montblanc_1_0,
+        });
+        bounds_group.addLayer(layer_l_u_montblanc_1);
+        map.addLayer(layer_l_u_montblanc_1);
+        function pop_resources_points_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>id</strong><br />' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <th scope="row">label</th>\
+                        <td>' + (feature.properties['label'] !== null ? autolinker.link(feature.properties['label'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
 
-		/* visited link */
-		a:visited {
-		  color: green;
-		}
-	</style>
-</head>
-<body>
-	<h1>Hola Món!</h1>
-	<p>Aquest es un exemple molt senzill de "Hello World" fet amb HTML, CSS i un <code>iframe</code> d'un mapa que hem creat a <a href="https://www.instamaps.cat" target="_blank">Instamaps</a>.</p>
+        function style_resources_points_2_0() {
+            return {
+                pane: 'pane_resources_points_2',
+                radius: 10.0,
+                opacity: 1,
+                color: 'rgba(0,0,0,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 2.0,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,255,255,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_resources_points_2');
+        map.getPane('pane_resources_points_2').style.zIndex = 402;
+        map.getPane('pane_resources_points_2').style['mix-blend-mode'] = 'normal';
+        var layer_resources_points_2 = new L.geoJson(json_resources_points_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_resources_points_2',
+            layerName: 'layer_resources_points_2',
+            pane: 'pane_resources_points_2',
+            onEachFeature: pop_resources_points_2,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_resources_points_2_0(feature));
+            },
+        });
+        var cluster_resources_points_2 = new L.MarkerClusterGroup({showCoverageOnHover: false,
+            spiderfyDistanceMultiplier: 2});
+        cluster_resources_points_2.addLayer(layer_resources_points_2);
 
-	<div>
-		<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" 				marginwidth="0" src="https://www.instamaps.cat/visor.html?	businessid=3266848c019d7fb071dbcc9bc28a568e&3D=false&embed=1" >
-		</iframe>
-	</div>
-</body>
+        bounds_group.addLayer(layer_resources_points_2);
+        cluster_resources_points_2.addTo(map);
+            var title = new L.Control();
+            title.onAdd = function (map) {
+                this._div = L.DomUtil.create('div', 'info');
+                this.update();
+                return this._div;
+            };
+            title.update = function () {
+                this._div.innerHTML = '<h2>first_map_qgisweb</h2>';
+            };
+            title.addTo(map);
+            var abstract = new L.Control({'position':'bottomright'});
+            abstract.onAdd = function (map) {
+                this._div = L.DomUtil.create('div',
+                'leaflet-control abstract');
+                this._div.id = 'abstract'
+
+                    abstract.show();
+                    return this._div;
+                };
+                abstract.show = function () {
+                    this._div.classList.remove("abstract");
+                    this._div.classList.add("abstractUncollapsed");
+                    this._div.innerHTML = 'This  map form part of a collection of high diversity of maps';
+            };
+            abstract.addTo(map);
+        var osmGeocoder = new L.Control.Geocoder({
+            collapsed: true,
+            position: 'topleft',
+            text: 'Search',
+            title: 'Testing'
+        }).addTo(map);
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .className += ' fa fa-search';
+        document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
+        .title += 'Search for a place';
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/resources_points_2.png" /> resources_points': cluster_resources_points_2,'<img src="legend/l_u_montblanc_1.png" /> l_u_montblanc': layer_l_u_montblanc_1,"Google Satellite Hybrid": layer_GoogleSatelliteHybrid_0,}).addTo(map);
+        setBounds();
+        </script>
+    </body>
 </html>
