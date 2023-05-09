@@ -270,6 +270,26 @@ i {
     margin: 0px;
     }
 
+.peu {
+
+    background-color: rgb(255, 255, 255);
+
+    color: white;
+
+    text-align:center;
+
+    vertical-align: middle;
+
+    height: 63px;
+
+    width: 100%;
+
+    top: 0px;
+
+    margin: 0px;
+
+    }
+
 .columnmenu{
         float: right;
         width: 34%;
