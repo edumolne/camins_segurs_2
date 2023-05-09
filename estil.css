@@ -59,7 +59,7 @@
                 background-color: rgb(0, 0, 0);
     }}
 
-@media screen and (min-width: 850px){
+@media screen and (max-width: 850px){
 .camins{
     float: left;
     width: 50%;
