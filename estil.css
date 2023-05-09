@@ -59,34 +59,20 @@
                 background-color: rgb(0, 0, 0);
     }}
 
-@media screen and (max-width: 850px){
+@media screen and (min-width: 850px){
 .camins{
-
-        float: left;
-
-width: 50%;
-
-        text-align: center;
-
-        font-size: 14px;
-
-        color: rgb(0, 0, 0);
-
-        font-family: sans-serif;
-
-        background-color: rgb(0, 0, 0);
-
-        vertical-align: bottom;
-
-        bottom: 0px;
-
-        margin: 0px;
-
-        margin-left: 0px;
-
+    float: left;
+    width: 50%;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0);
+    vertical-align: bottom;
+    bottom: 0px;
+    margin: 0px;
+    margin-left: 0px;
 }
-        
-
 }
     
 @media screen and (min-width: 580px){
