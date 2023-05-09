@@ -264,15 +264,16 @@ i {
 
 
 .credits {
-    background-color: rgb(52, 165, 173);
-    color: black;
+    background-color: black;
+    color: white;
     text-align:center;
     vertical-align: middle;
-    height: 63px;
+    height: 200px;
     width: 100%;
     top: 0px;
     margin: 0px;
     font-size: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
