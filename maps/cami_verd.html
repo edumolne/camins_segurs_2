@@ -38,11 +38,11 @@
         <script src="data/CamSantFrancesc_4.js"></script>
         <script src="data/CamdeRib_5.js"></script>
         <script src="data/Cammedieval_6.js"></script>
-        <script src="data/Camesports_7.js"></script>
-        <script src="data/CamCasal_8.js"></script>
-        <script src="data/CamMaredeDudelaSerra_9.js"></script>
-        <script src="data/Camlesmuralles_10.js"></script>
-        <script src="data/Camescoles_11.js"></script>
+        <script src="data/CamCasal_7.js"></script>
+        <script src="data/CamMaredeDudelaSerra_8.js"></script>
+        <script src="data/Camlesmuralles_9.js"></script>
+        <script src="data/Camescoles_10.js"></script>
+        <script src="data/Camesports_11.js"></script>
         <script src="data/Interseccions_12.js"></script>
         <script src="data/Puntsdereferncia_13.js"></script>
         <script>
@@ -107,7 +107,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(3,152,158,0.5019607843137255)',
+                fillColor: 'rgba(255,255,255,0.5019607843137255)',
                 interactive: false,
             }
         }
@@ -384,7 +384,7 @@
             return {
                 pane: 'pane_Toteslesvies_3',
                 opacity: 1,
-                color: 'rgba(0,0,0,0.5019607843137255)',
+                color: 'rgba(0,0,0,0.25098039215686274)',
                 dashArray: '',
                 lineCap: 'round',
                 lineJoin: 'round',
@@ -397,7 +397,7 @@
             return {
                 pane: 'pane_Toteslesvies_3',
                 opacity: 1,
-                color: 'rgba(255,255,255,0.5019607843137255)',
+                color: 'rgba(255,255,255,0.25098039215686274)',
                 dashArray: '',
                 lineCap: 'round',
                 lineJoin: 'round',
@@ -576,7 +576,7 @@
         });
         bounds_group.addLayer(layer_Cammedieval_6);
         map.addLayer(layer_Cammedieval_6);
-        function pop_Camesports_7(feature, layer) {
+        function pop_CamCasal_7(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
@@ -588,61 +588,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Camesports_7_0() {
+        function style_CamCasal_7_0() {
             return {
-                pane: 'pane_Camesports_7',
-                opacity: 1,
-                color: 'rgba(255,255,255,1.0)',
-                dashArray: '',
-                lineCap: 'round',
-                lineJoin: 'round',
-                weight: 8.0,
-                fillOpacity: 0,
-                interactive: true,
-            }
-        }
-        function style_Camesports_7_1() {
-            return {
-                pane: 'pane_Camesports_7',
-                opacity: 1,
-                color: 'rgba(77,175,74,1.0)',
-                dashArray: '',
-                lineCap: 'round',
-                lineJoin: 'round',
-                weight: 6.0,
-                fillOpacity: 0,
-                interactive: true,
-            }
-        }
-        map.createPane('pane_Camesports_7');
-        map.getPane('pane_Camesports_7').style.zIndex = 407;
-        map.getPane('pane_Camesports_7').style['mix-blend-mode'] = 'normal';
-        var layer_Camesports_7 = new L.geoJson.multiStyle(json_Camesports_7, {
-            attribution: '',
-            interactive: true,
-            dataVar: 'json_Camesports_7',
-            layerName: 'layer_Camesports_7',
-            pane: 'pane_Camesports_7',
-            onEachFeature: pop_Camesports_7,
-            styles: [style_Camesports_7_0,style_Camesports_7_1,]
-        });
-        bounds_group.addLayer(layer_Camesports_7);
-        map.addLayer(layer_Camesports_7);
-        function pop_CamCasal_8(feature, layer) {
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2"><strong>NOM</strong><br />' + (feature.properties['NOM'] !== null ? autolinker.link(feature.properties['NOM'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            layer.bindPopup(popupContent, {maxHeight: 400});
-        }
-
-        function style_CamCasal_8_0() {
-            return {
-                pane: 'pane_CamCasal_8',
+                pane: 'pane_CamCasal_7',
                 opacity: 1,
                 color: 'rgba(255,255,255,1.0)',
                 dashArray: '',
@@ -653,9 +601,9 @@
                 interactive: false,
             }
         }
-        function style_CamCasal_8_1() {
+        function style_CamCasal_7_1() {
             return {
-                pane: 'pane_CamCasal_8',
+                pane: 'pane_CamCasal_7',
                 opacity: 1,
                 color: 'rgba(227,26,28,1.0)',
                 dashArray: '',
@@ -666,21 +614,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_CamCasal_8');
-        map.getPane('pane_CamCasal_8').style.zIndex = 408;
-        map.getPane('pane_CamCasal_8').style['mix-blend-mode'] = 'normal';
-        var layer_CamCasal_8 = new L.geoJson.multiStyle(json_CamCasal_8, {
+        map.createPane('pane_CamCasal_7');
+        map.getPane('pane_CamCasal_7').style.zIndex = 407;
+        map.getPane('pane_CamCasal_7').style['mix-blend-mode'] = 'normal';
+        var layer_CamCasal_7 = new L.geoJson.multiStyle(json_CamCasal_7, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_CamCasal_8',
-            layerName: 'layer_CamCasal_8',
-            pane: 'pane_CamCasal_8',
-            onEachFeature: pop_CamCasal_8,
-            styles: [style_CamCasal_8_0,style_CamCasal_8_1,]
+            dataVar: 'json_CamCasal_7',
+            layerName: 'layer_CamCasal_7',
+            pane: 'pane_CamCasal_7',
+            onEachFeature: pop_CamCasal_7,
+            styles: [style_CamCasal_7_0,style_CamCasal_7_1,]
         });
-        bounds_group.addLayer(layer_CamCasal_8);
-        map.addLayer(layer_CamCasal_8);
-        function pop_CamMaredeDudelaSerra_9(feature, layer) {
+        bounds_group.addLayer(layer_CamCasal_7);
+        map.addLayer(layer_CamCasal_7);
+        function pop_CamMaredeDudelaSerra_8(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
@@ -692,9 +640,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_CamMaredeDudelaSerra_9_0() {
+        function style_CamMaredeDudelaSerra_8_0() {
             return {
-                pane: 'pane_CamMaredeDudelaSerra_9',
+                pane: 'pane_CamMaredeDudelaSerra_8',
                 opacity: 1,
                 color: 'rgba(255,255,255,1.0)',
                 dashArray: '',
@@ -705,9 +653,9 @@
                 interactive: false,
             }
         }
-        function style_CamMaredeDudelaSerra_9_1() {
+        function style_CamMaredeDudelaSerra_8_1() {
             return {
-                pane: 'pane_CamMaredeDudelaSerra_9',
+                pane: 'pane_CamMaredeDudelaSerra_8',
                 opacity: 1,
                 color: 'rgba(238,238,70,1.0)',
                 dashArray: '',
@@ -718,21 +666,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_CamMaredeDudelaSerra_9');
-        map.getPane('pane_CamMaredeDudelaSerra_9').style.zIndex = 409;
-        map.getPane('pane_CamMaredeDudelaSerra_9').style['mix-blend-mode'] = 'normal';
-        var layer_CamMaredeDudelaSerra_9 = new L.geoJson.multiStyle(json_CamMaredeDudelaSerra_9, {
+        map.createPane('pane_CamMaredeDudelaSerra_8');
+        map.getPane('pane_CamMaredeDudelaSerra_8').style.zIndex = 408;
+        map.getPane('pane_CamMaredeDudelaSerra_8').style['mix-blend-mode'] = 'normal';
+        var layer_CamMaredeDudelaSerra_8 = new L.geoJson.multiStyle(json_CamMaredeDudelaSerra_8, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_CamMaredeDudelaSerra_9',
-            layerName: 'layer_CamMaredeDudelaSerra_9',
-            pane: 'pane_CamMaredeDudelaSerra_9',
-            onEachFeature: pop_CamMaredeDudelaSerra_9,
-            styles: [style_CamMaredeDudelaSerra_9_0,style_CamMaredeDudelaSerra_9_1,]
+            dataVar: 'json_CamMaredeDudelaSerra_8',
+            layerName: 'layer_CamMaredeDudelaSerra_8',
+            pane: 'pane_CamMaredeDudelaSerra_8',
+            onEachFeature: pop_CamMaredeDudelaSerra_8,
+            styles: [style_CamMaredeDudelaSerra_8_0,style_CamMaredeDudelaSerra_8_1,]
         });
-        bounds_group.addLayer(layer_CamMaredeDudelaSerra_9);
-        map.addLayer(layer_CamMaredeDudelaSerra_9);
-        function pop_Camlesmuralles_10(feature, layer) {
+        bounds_group.addLayer(layer_CamMaredeDudelaSerra_8);
+        map.addLayer(layer_CamMaredeDudelaSerra_8);
+        function pop_Camlesmuralles_9(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
@@ -747,9 +695,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Camlesmuralles_10_0() {
+        function style_Camlesmuralles_9_0() {
             return {
-                pane: 'pane_Camlesmuralles_10',
+                pane: 'pane_Camlesmuralles_9',
                 opacity: 1,
                 color: 'rgba(255,255,255,1.0)',
                 dashArray: '',
@@ -760,9 +708,9 @@
                 interactive: false,
             }
         }
-        function style_Camlesmuralles_10_1() {
+        function style_Camlesmuralles_9_1() {
             return {
-                pane: 'pane_Camlesmuralles_10',
+                pane: 'pane_Camlesmuralles_9',
                 opacity: 1,
                 color: 'rgba(31,120,180,1.0)',
                 dashArray: '',
@@ -773,21 +721,21 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_Camlesmuralles_10');
-        map.getPane('pane_Camlesmuralles_10').style.zIndex = 410;
-        map.getPane('pane_Camlesmuralles_10').style['mix-blend-mode'] = 'normal';
-        var layer_Camlesmuralles_10 = new L.geoJson.multiStyle(json_Camlesmuralles_10, {
+        map.createPane('pane_Camlesmuralles_9');
+        map.getPane('pane_Camlesmuralles_9').style.zIndex = 409;
+        map.getPane('pane_Camlesmuralles_9').style['mix-blend-mode'] = 'normal';
+        var layer_Camlesmuralles_9 = new L.geoJson.multiStyle(json_Camlesmuralles_9, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_Camlesmuralles_10',
-            layerName: 'layer_Camlesmuralles_10',
-            pane: 'pane_Camlesmuralles_10',
-            onEachFeature: pop_Camlesmuralles_10,
-            styles: [style_Camlesmuralles_10_0,style_Camlesmuralles_10_1,]
+            dataVar: 'json_Camlesmuralles_9',
+            layerName: 'layer_Camlesmuralles_9',
+            pane: 'pane_Camlesmuralles_9',
+            onEachFeature: pop_Camlesmuralles_9,
+            styles: [style_Camlesmuralles_9_0,style_Camlesmuralles_9_1,]
         });
-        bounds_group.addLayer(layer_Camlesmuralles_10);
-        map.addLayer(layer_Camlesmuralles_10);
-        function pop_Camescoles_11(feature, layer) {
+        bounds_group.addLayer(layer_Camlesmuralles_9);
+        map.addLayer(layer_Camlesmuralles_9);
+        function pop_Camescoles_10(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
@@ -803,9 +751,9 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_Camescoles_11_0() {
+        function style_Camescoles_10_0() {
             return {
-                pane: 'pane_Camescoles_11',
+                pane: 'pane_Camescoles_10',
                 opacity: 1,
                 color: 'rgba(255,255,255,1.0)',
                 dashArray: '',
@@ -816,11 +764,11 @@
                 interactive: false,
             }
         }
-        function style_Camescoles_11_1() {
+        function style_Camescoles_10_1() {
             return {
-                pane: 'pane_Camescoles_11',
+                pane: 'pane_Camescoles_10',
                 opacity: 1,
-                color: 'rgba(178,223,138,1.0)',
+                color: 'rgba(178,223,138,0.5019607843137255)',
                 dashArray: '',
                 lineCap: 'round',
                 lineJoin: 'round',
@@ -829,20 +777,72 @@
                 interactive: false,
             }
         }
-        map.createPane('pane_Camescoles_11');
-        map.getPane('pane_Camescoles_11').style.zIndex = 411;
-        map.getPane('pane_Camescoles_11').style['mix-blend-mode'] = 'normal';
-        var layer_Camescoles_11 = new L.geoJson.multiStyle(json_Camescoles_11, {
+        map.createPane('pane_Camescoles_10');
+        map.getPane('pane_Camescoles_10').style.zIndex = 410;
+        map.getPane('pane_Camescoles_10').style['mix-blend-mode'] = 'normal';
+        var layer_Camescoles_10 = new L.geoJson.multiStyle(json_Camescoles_10, {
             attribution: '',
             interactive: false,
-            dataVar: 'json_Camescoles_11',
-            layerName: 'layer_Camescoles_11',
-            pane: 'pane_Camescoles_11',
-            onEachFeature: pop_Camescoles_11,
-            styles: [style_Camescoles_11_0,style_Camescoles_11_1,]
+            dataVar: 'json_Camescoles_10',
+            layerName: 'layer_Camescoles_10',
+            pane: 'pane_Camescoles_10',
+            onEachFeature: pop_Camescoles_10,
+            styles: [style_Camescoles_10_0,style_Camescoles_10_1,]
         });
-        bounds_group.addLayer(layer_Camescoles_11);
-        map.addLayer(layer_Camescoles_11);
+        bounds_group.addLayer(layer_Camescoles_10);
+        map.addLayer(layer_Camescoles_10);
+        function pop_Camesports_11(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>NOM</strong><br />' + (feature.properties['NOM'] !== null ? autolinker.link(feature.properties['NOM'].toLocaleString()) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Camesports_11_0() {
+            return {
+                pane: 'pane_Camesports_11',
+                opacity: 1,
+                color: 'rgba(255,255,255,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 8.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        function style_Camesports_11_1() {
+            return {
+                pane: 'pane_Camesports_11',
+                opacity: 1,
+                color: 'rgba(77,175,74,1.0)',
+                dashArray: '',
+                lineCap: 'round',
+                lineJoin: 'round',
+                weight: 6.0,
+                fillOpacity: 0,
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Camesports_11');
+        map.getPane('pane_Camesports_11').style.zIndex = 411;
+        map.getPane('pane_Camesports_11').style['mix-blend-mode'] = 'normal';
+        var layer_Camesports_11 = new L.geoJson.multiStyle(json_Camesports_11, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Camesports_11',
+            layerName: 'layer_Camesports_11',
+            pane: 'pane_Camesports_11',
+            onEachFeature: pop_Camesports_11,
+            styles: [style_Camesports_11_0,style_Camesports_11_1,]
+        });
+        bounds_group.addLayer(layer_Camesports_11);
+        map.addLayer(layer_Camesports_11);
         function pop_Interseccions_12(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
@@ -1013,7 +1013,8 @@
         function pop_Puntsdereferncia_13(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2"><strong>Categoria</strong><br />' + (feature.properties['Categoria'] !== null ? autolinker.link(feature.properties['Categoria'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">Categoria</th>\
+                        <td>' + (feature.properties['Categoria'] !== null ? autolinker.link(feature.properties['Categoria'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2"><strong>Nom</strong><br />' + (feature.properties['Nom'] !== null ? autolinker.link(feature.properties['Nom'].toLocaleString()) : '') + '</td>\
@@ -1185,7 +1186,7 @@
         bounds_group.addLayer(layer_Puntsdereferncia_13);
         map.addLayer(layer_Puntsdereferncia_13);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'Punts de referència<br /><table><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonalesMuralles0.png" /></td><td>Zona les Muralles</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_Zonamedieval1.png" /></td><td>Zona medieval</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonaMaredeDéudelaSerra2.png" /></td><td>Zona Mare de Déu de la Serra</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonaRibé3.png" /></td><td>Zona Ribé</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_Zonaesportiva4.png" /></td><td>Zona esportiva</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonaCasal5.png" /></td><td>Zona Casal</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonaSantFrancesc6.png" /></td><td>Zona Sant Francesc</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_Zonaescoles7.png" /></td><td>Zona escoles</td></tr></table>': layer_Puntsdereferncia_13,'Interseccions<br /><table><tr><td style="text-align: center;"><img src="legend/Interseccions_12_Casal0.png" /></td><td>Casal</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_CollegidEducacióInfantiliPrimàrialesMuralles1.png" /></td><td>Col·legi d\'Educació Infantil i Primària les Muralles</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_CollegiMaredeDéudelaSerra2.png" /></td><td>Col·legi Mare de Déu de la Serra</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_PlaçaCatalunya3.png" /></td><td>Plaça Catalunya</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_Quatrecantons4.png" /></td><td>Quatre cantons</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_SantFrancesc5.png" /></td><td>Sant Francesc</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_SantJordi6.png" /></td><td>Sant Jordi</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_SantMiquel7.png" /></td><td>Sant Miquel</td></tr></table>': layer_Interseccions_12,'<img src="legend/Camescoles_11.png" /> Camí escoles': layer_Camescoles_11,'<img src="legend/Camlesmuralles_10.png" /> Camí les muralles': layer_Camlesmuralles_10,'<img src="legend/CamMaredeDudelaSerra_9.png" /> Camí Mare de Déu de la Serra': layer_CamMaredeDudelaSerra_9,'<img src="legend/CamCasal_8.png" /> Camí Casal': layer_CamCasal_8,'<img src="legend/Camesports_7.png" /> Camí esports': layer_Camesports_7,'<img src="legend/Cammedieval_6.png" /> Camí medieval': layer_Cammedieval_6,'<img src="legend/CamdeRib_5.png" /> Camí de Ribé': layer_CamdeRib_5,'<img src="legend/CamSantFrancesc_4.png" /> Camí Sant Francesc': layer_CamSantFrancesc_4,'<img src="legend/Toteslesvies_3.png" /> Totes les vies': layer_Toteslesvies_3,'<img src="legend/train_2.png" /> train': layer_train_2,'<img src="legend/Montblanc_1.png" /> Montblanc': layer_Montblanc_1,"Ortofotografia ICGC (2021)": layer_OrtofotografiaICGC2021_0,}).addTo(map);
+        L.control.layers(baseMaps,{'Punts de referència<br /><table><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonalesMuralles0.png" /></td><td>Zona les Muralles</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_Zonamedieval1.png" /></td><td>Zona medieval</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonaMaredeDéudelaSerra2.png" /></td><td>Zona Mare de Déu de la Serra</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonaRibé3.png" /></td><td>Zona Ribé</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_Zonaesportiva4.png" /></td><td>Zona esportiva</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonaCasal5.png" /></td><td>Zona Casal</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_ZonaSantFrancesc6.png" /></td><td>Zona Sant Francesc</td></tr><tr><td style="text-align: center;"><img src="legend/Puntsdereferncia_13_Zonaescoles7.png" /></td><td>Zona escoles</td></tr></table>': layer_Puntsdereferncia_13,'Interseccions<br /><table><tr><td style="text-align: center;"><img src="legend/Interseccions_12_Casal0.png" /></td><td>Casal</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_CollegidEducacióInfantiliPrimàrialesMuralles1.png" /></td><td>Col·legi d\'Educació Infantil i Primària les Muralles</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_CollegiMaredeDéudelaSerra2.png" /></td><td>Col·legi Mare de Déu de la Serra</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_PlaçaCatalunya3.png" /></td><td>Plaça Catalunya</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_Quatrecantons4.png" /></td><td>Quatre cantons</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_SantFrancesc5.png" /></td><td>Sant Francesc</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_SantJordi6.png" /></td><td>Sant Jordi</td></tr><tr><td style="text-align: center;"><img src="legend/Interseccions_12_SantMiquel7.png" /></td><td>Sant Miquel</td></tr></table>': layer_Interseccions_12,'<img src="legend/Camesports_11.png" /> Camí esports': layer_Camesports_11,'<img src="legend/Camescoles_10.png" /> Camí escoles': layer_Camescoles_10,'<img src="legend/Camlesmuralles_9.png" /> Camí les muralles': layer_Camlesmuralles_9,'<img src="legend/CamMaredeDudelaSerra_8.png" /> Camí Mare de Déu de la Serra': layer_CamMaredeDudelaSerra_8,'<img src="legend/CamCasal_7.png" /> Camí Casal': layer_CamCasal_7,'<img src="legend/Cammedieval_6.png" /> Camí medieval': layer_Cammedieval_6,'<img src="legend/CamdeRib_5.png" /> Camí de Ribé': layer_CamdeRib_5,'<img src="legend/CamSantFrancesc_4.png" /> Camí Sant Francesc': layer_CamSantFrancesc_4,'<img src="legend/Toteslesvies_3.png" /> Totes les vies': layer_Toteslesvies_3,'<img src="legend/train_2.png" /> train': layer_train_2,'<img src="legend/Montblanc_1.png" /> Montblanc': layer_Montblanc_1,"Ortofotografia ICGC (2021)": layer_OrtofotografiaICGC2021_0,}).addTo(map);
         setBounds();
         resetLabels([layer_Puntsdereferncia_13]);
         map.on("zoomend", function(){
