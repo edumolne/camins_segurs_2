@@ -16,13 +16,13 @@ Aquest projecte té dues finalitats:
 
 ## 2 Dades/continguts.
 *Una imatge d'exemple:*
-![alt text](./Imatges/1.jpg)
-![alt text](./Imatges/2.jpg)
-![alt text](./Imatges/3.jpg)
-![alt text](./Imatges/4.jpg)
-![alt text](./Imatges/camired.jpg)
-![alt text](./Imatges/camired_white.jpg)
-![alt text](./Imatges/camired-black.jpg)
+![alt text](./Imatges/1.png)
+![alt text](./Imatges/2.png)
+![alt text](./Imatges/3.png)
+![alt text](./Imatges/4.png)
+![alt text](./Imatges/camired.png)
+![alt text](./Imatges/camired_white.png)
+![alt text](./Imatges/camired-black.png)
 ![alt text](./Imatges/mapa_esq.jpg)
 
 D’on s’han tret les:
