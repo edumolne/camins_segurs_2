@@ -16,14 +16,14 @@ Aquest projecte té dues finalitats:
 
 ## 2 Dades/continguts.
 *Una imatge d'exemple:*
-![alt text](./Imatges/1.jpg "Foto FTG")
-![alt text](./Imatges/2.jpg "Foto FTG")
-![alt text](./Imatges/3.jpg "Foto FTG")
-![alt text](./Imatges/4.jpg "Foto FTG")
-![alt text](./Imatges/camired.jpg "Foto FTG")
-![alt text](./Imatges/camired_white.jpg "Foto FTG")
-![alt text](./Imatges/camired-black.jpg "Foto FTG")
-![alt text](./Imatges/mapa_esq.jpg "Foto FTG")
+![alt text](./Imatges/1.jpg)
+![alt text](./Imatges/2.jpg)
+![alt text](./Imatges/3.jpg)
+![alt text](./Imatges/4.jpg)
+![alt text](./Imatges/camired.jpg)
+![alt text](./Imatges/camired_white.jpg)
+![alt text](./Imatges/camired-black.jpg)
+![alt text](./Imatges/mapa_esq.jpg)
 
 D’on s’han tret les:
 - dades
