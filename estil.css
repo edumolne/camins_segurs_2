@@ -294,20 +294,6 @@ i {
 }
 
 
-.credits {
-    background-color: black;
-    color: white;
-    text-align:center;
-    vertical-align: bottom;
-    height: 100px;
-    width: 100%;
-    top: 0px;
-    margin: 0px;
-    font-size: 10px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
 .columnmenu{
         float: right;
         width: 34%;
