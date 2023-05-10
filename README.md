@@ -4,12 +4,26 @@ A test repository for publishing my first web page. This website is published at
 Canvi
 
 ## 1 Tema/motivació.
-Explica l’ **objectiu** de la web i la motivació per fer-la. Vinculació
-amb Geografia.
+*Explica l’ **objectiu** de la web i la motivació per fer-la. Vinculació
+amb Geografia.*
+Camins Segurs és un projecte fictici creat a l’assignatura de Producció, disseny cartogràfic i eines web del grau en Geografia, Anàlisi territorial i Sostenibilitat de la Universitat Rovira i Virgili.
+
+Aquest projecte té dues finalitats:
+
+1a. La creació d’una pàgina web. La primera de les finalitats és crear una pàgina web amb els codis html (HyperText Markup Language), ccs (Cascading Style Sheets) i js (Java Script) treballats a l'assignatura i l'incorporació d'un mapa a la mateixa pàgina web.
+
+2a. Exposició pública dels diferents Camins Segurs. Els visitants de la pàgina web podran conèixer els diferents recorreguts que connecten els centres educatius de Montblanc amb els equipaments esportius, culturals i altres centres formatius on els nens i les nenes duen a terme les seves activitats extraescolars. Amb l’objectiu de crear recorreguts on coincideixin amb altres nens i nenes, es redueixi l’ús dels vehicles privats, s’introdueixin al món de l’orientació i utilitzin camins millor condicionats.
 
 ## 2 Dades/continguts.
-Una imatge d'exemple:
-![alt text](./images/imatge-de-prova.jpg "Foto FTG")
+*Una imatge d'exemple:*
+![alt text](./Imatges/1.jpg "Foto FTG")
+![alt text](./Imatges/2.jpg "Foto FTG")
+![alt text](./Imatges/3.jpg "Foto FTG")
+![alt text](./Imatges/4.jpg "Foto FTG")
+![alt text](./Imatges/camired.jpg "Foto FTG")
+![alt text](./Imatges/camired_white.jpg "Foto FTG")
+![alt text](./Imatges/camired-black.jpg "Foto FTG")
+![alt text](./Imatges/mapa_esq.jpg "Foto FTG")
 
 D’on s’han tret les:
 - dades
