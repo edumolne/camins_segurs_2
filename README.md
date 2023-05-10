@@ -62,17 +62,34 @@ La pàgina té una estructura de:
 
 La pàgina *índex.html* ha estat clonada vuit vegades, una per cada ruta i amb petits canvis:
 - Primera diferència: El mapa es troba ampliat per cada ruta.
-- L'imatge de la ruta es troba amb el fons blanc. 
+- L'imatge de la ruta es troba amb el fons blanc.
+- Al peu de l'imatge hi ha una nota informativa de la pàgina on es troba.
 
 ## 4 Web responsive.
-Explica cóm ha fet (alguna tècnica) per a que la seva web
-s’adapti a *diferents dispositius*. Resolució de les imatges, etc
+*Explica cóm ha fet (alguna tècnica) per a que la seva web
+s’adapti a diferents dispositius. Resolució de les imatges, etc*
+Aquesta pàgina web té dues adaptacions del menú de la capçalera:
+- Per ordinador (pantalla major a 580px). El menú es troba amb totes les opcions visibles.
+- Per mòbil (pantalla menor a 580px). El menú es troba ocultat i es deplaga quan es prem la caixeta del menú.
+
+L'imatge de portada s'adapta, sempre, al 100% de la pantalla, sigui quin sigui la seva mida.
+
+Els botons de cada camí segur ocupa el 25% de la pantalla (quan aquesta sigui superior a 580px) o el 50% (quan aquesta sigui inferior a 580px)
+
+El mapa ocupa el 85% de la pantalla (d'aquesta manera s'adapta sempre a la mida de la pantalla) i queda un 15% per desplaçar la pàgina quan aquesta es visualitzi des d'un telèfon mòbil.
+
+El peu de pàgina els logotips ocupen el 60% de l'amplada de la pantalla i el menú el 40% (quan la pantalla és superior a 580px) o el 100% cada "caixeta" (quan la pantalla és inferior a 580px).
 
 ## 5 Cartografia.
-Com s’han integrat i elaborat els mapes que apareixen a la web.
+*Com s’han integrat i elaborat els mapes que apareixen a la web.*
+La pàgina web té un sol mapa creat amb nou ampliaciona automàtiques diferents, una per cada possible ruta i una de general a la pàgina incial, però que l'usuari pot adaptar-la. El mapa té limitacions per, només, poder visualitzar el municipi de Montblanc i no poder-la ampliar fins a mides que no es reconeixen els elements.
+
+El mapa ocupa el 85% de la pantalla (d'aquesta manera s'adapta sempre a la mida de la pantalla) i queda un 15% per desplaçar la pàgina quan aquesta es visualitzi des d'un telèfon mòbil.
+
 
 ## 6 Dificultats/millores.
-Reflexiona proactivament sobre el producte elaborat.
+*Reflexiona proactivament sobre el producte elaborat*.
+El mapa final que per mòbil tingui l'amplada del 85% (com ara) per poder visualitzar des d'un telèfon mòbil i per ordinador del 100%.
 
 ## 7 Pregunta.
 Respon a les preguntes de manera adient i utilitza el vocabulari tècnic
