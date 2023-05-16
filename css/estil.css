@@ -307,3 +307,9 @@ i {
         margin-left:5px;
         margin-right:-5px;
         }
+
+.columncap {
+    float: left;
+    width: 190px;
+    text-align:center;
+    }
