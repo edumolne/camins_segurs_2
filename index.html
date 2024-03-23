@@ -10,9 +10,9 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/MarkerCluster.css">
         <link rel="stylesheet" href="css/MarkerCluster.Default.css">
-        <link rel="stylesheet" href="css/leaflet-search.css">
         <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
+        <link href="https://db.onlinewebfonts.com/c/31a404037ec9e43f1a4c541aadfbb0c7?family=Dax+W04+Wide+Medium" rel="stylesheet">
         <style>
         html, body, #map {
             width: 100%;
@@ -40,7 +40,6 @@
         <script src="js/leaflet-control-geocoder.Geocoder.js"></script>
         <script src="js/leaflet-measure.js"></script>
         <script src="js/leaflet.markercluster.js"></script>
-        <script src="js/leaflet-search.js"></script>
         <script src="data/Municipisdelacomarca_1.js"></script>
         <script src="data/limits_administratius_2.js"></script>
         <script src="data/Unitatsdelcatlegdepaisatge_3.js"></script>
@@ -116,6 +115,7 @@
         .className += ' fas fa-ruler';
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
+            map.setMaxBounds(map.getBounds());
         }
         map.createPane('pane_Mapatopogrficopirmidetopogrfica_0');
         map.getPane('pane_Mapatopogrficopirmidetopogrfica_0').style.zIndex = 400;
@@ -128,7 +128,6 @@
             tiled: true,
             info_format: 'text/html',
             opacity: 1,
-            identify: false,
             attribution: '',
         });
         map.addLayer(layer_Mapatopogrficopirmidetopogrfica_0);
@@ -677,6 +676,10 @@
                 return L.circleMarker(latlng, style_Miradors_7_0(feature));
             },
         });
+        var cluster_Miradors_7 = new L.MarkerClusterGroup({showCoverageOnHover: false,
+            spiderfyDistanceMultiplier: 2});
+        cluster_Miradors_7.addLayer(layer_Miradors_7);
+
         bounds_group.addLayer(layer_Miradors_7);
         function pop_Construccionsdepedraseca_8(feature, layer) {
             layer.on({
@@ -743,6 +746,10 @@
                 return L.circleMarker(latlng, style_Construccionsdepedraseca_8_0(feature));
             },
         });
+        var cluster_Construccionsdepedraseca_8 = new L.MarkerClusterGroup({showCoverageOnHover: false,
+            spiderfyDistanceMultiplier: 2});
+        cluster_Construccionsdepedraseca_8.addLayer(layer_Construccionsdepedraseca_8);
+
         bounds_group.addLayer(layer_Construccionsdepedraseca_8);
         function pop_Nuclis_9(feature, layer) {
             layer.on({
@@ -816,8 +823,12 @@
                 return L.shapeMarker(latlng, style_Nuclis_9_0(feature));
             },
         });
+        var cluster_Nuclis_9 = new L.MarkerClusterGroup({showCoverageOnHover: false,
+            spiderfyDistanceMultiplier: 2});
+        cluster_Nuclis_9.addLayer(layer_Nuclis_9);
+
         bounds_group.addLayer(layer_Nuclis_9);
-        map.addLayer(layer_Nuclis_9);
+        cluster_Nuclis_9.addTo(map);
         function pop_ValorhistricCivil_10(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -889,8 +900,12 @@
                 return L.circleMarker(latlng, style_ValorhistricCivil_10_0(feature));
             },
         });
+        var cluster_ValorhistricCivil_10 = new L.MarkerClusterGroup({showCoverageOnHover: false,
+            spiderfyDistanceMultiplier: 2});
+        cluster_ValorhistricCivil_10.addLayer(layer_ValorhistricCivil_10);
+
         bounds_group.addLayer(layer_ValorhistricCivil_10);
-        map.addLayer(layer_ValorhistricCivil_10);
+        cluster_ValorhistricCivil_10.addTo(map);
         function pop_ValorhistricReligisisimblic_11(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -965,8 +980,12 @@
                 return L.circleMarker(latlng, style_ValorhistricReligisisimblic_11_0(feature));
             },
         });
+        var cluster_ValorhistricReligisisimblic_11 = new L.MarkerClusterGroup({showCoverageOnHover: false,
+            spiderfyDistanceMultiplier: 2});
+        cluster_ValorhistricReligisisimblic_11.addLayer(layer_ValorhistricReligisisimblic_11);
+
         bounds_group.addLayer(layer_ValorhistricReligisisimblic_11);
-        map.addLayer(layer_ValorhistricReligisisimblic_11);
+        cluster_ValorhistricReligisisimblic_11.addTo(map);
         function pop_Valorsecolgics_12(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1035,8 +1054,12 @@
                 return L.circleMarker(latlng, style_Valorsecolgics_12_0(feature));
             },
         });
+        var cluster_Valorsecolgics_12 = new L.MarkerClusterGroup({showCoverageOnHover: false,
+            spiderfyDistanceMultiplier: 2});
+        cluster_Valorsecolgics_12.addLayer(layer_Valorsecolgics_12);
+
         bounds_group.addLayer(layer_Valorsecolgics_12);
-        map.addLayer(layer_Valorsecolgics_12);
+        cluster_Valorsecolgics_12.addTo(map);
         function pop_ValorsNaturals_13(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1111,8 +1134,12 @@
                 return L.circleMarker(latlng, style_ValorsNaturals_13_0(feature));
             },
         });
+        var cluster_ValorsNaturals_13 = new L.MarkerClusterGroup({showCoverageOnHover: false,
+            spiderfyDistanceMultiplier: 2});
+        cluster_ValorsNaturals_13.addLayer(layer_ValorsNaturals_13);
+
         bounds_group.addLayer(layer_ValorsNaturals_13);
-        map.addLayer(layer_ValorsNaturals_13);
+        cluster_ValorsNaturals_13.addTo(map);
         function pop_RutadelCister_14(feature, layer) {
             layer.on({
                 mouseout: function(e) {
@@ -1277,7 +1304,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/Monestirscistercencs_15.png" /> Monestirs cistercencs': cluster_Monestirscistercencs_15,'Ruta del Cister<br /><table><tr><td style="text-align: center;"><img src="legend/RutadelCister_14_Apeu0.png" /></td><td>A peu</td></tr><tr><td style="text-align: center;"><img src="legend/RutadelCister_14_BTT1.png" /></td><td>BTT</td></tr></table>': layer_RutadelCister_14,'<img src="legend/ValorsNaturals_13.png" /> Valors Naturals': layer_ValorsNaturals_13,'<img src="legend/Valorsecolgics_12.png" /> Valors ecològics': layer_Valorsecolgics_12,'<img src="legend/ValorhistricReligisisimblic_11.png" /> Valor històric. Religiós i simbòlic': layer_ValorhistricReligisisimblic_11,'<img src="legend/ValorhistricCivil_10.png" /> Valor històric. Civil': layer_ValorhistricCivil_10,'<img src="legend/Nuclis_9.png" /> Nuclis': layer_Nuclis_9,'<img src="legend/Construccionsdepedraseca_8.png" /> Construccions de pedra seca': layer_Construccionsdepedraseca_8,'<img src="legend/Miradors_7.png" /> Miradors': layer_Miradors_7,'<img src="legend/Itineraris_6.png" /> Itineraris': layer_Itineraris_6,'<img src="legend/Conjuntmonumental_5.png" /> Conjunt monumental': layer_Conjuntmonumental_5,'Espais d\'Interès Natural<br /><table><tr><td style="text-align: center;"><img src="legend/EspaisdIntersNatural_4_ParatgeNaturaldInterèsNacional0.png" /></td><td>Paratge Natural d\'Interès Nacional</td></tr><tr><td style="text-align: center;"><img src="legend/EspaisdIntersNatural_4_ReservaNaturalParcial1.png" /></td><td>Reserva Natural Parcial</td></tr><tr><td style="text-align: center;"><img src="legend/EspaisdIntersNatural_4_PladEspaisdInterèsNatural2.png" /></td><td>Pla d\'Espais d\'Interès Natural</td></tr></table>': layer_EspaisdIntersNatural_4,'Unitats del catàleg de paisatge<br /><table><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_AltGaià0.png" /></td><td>Alt Gaià</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_BaixaSegarra1.png" /></td><td>Baixa Segarra</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_ConcadePoblet2.png" /></td><td>Conca de Poblet</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_GarriguesBaixesiValldelCorb3.png" /></td><td>Garrigues Baixes i Vall del Corb</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_MuntanyesdePrades4.png" /></td><td>Muntanyes de Prades</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_ValldelSilenci5.png" /></td><td>Vall del Silenci</td></tr></table>': layer_Unitatsdelcatlegdepaisatge_3,'<img src="legend/limits_administratius_2.png" /> limits_administratius': layer_limits_administratius_2,'<img src="legend/Municipisdelacomarca_1.png" /> Municipis de la comarca': layer_Municipisdelacomarca_1,"Mapa topográfico (pirámide topográfica)": layer_Mapatopogrficopirmidetopogrfica_0,}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/Monestirscistercencs_15.png" /> Monestirs cistercencs': cluster_Monestirscistercencs_15,'Ruta del Cister<br /><table><tr><td style="text-align: center;"><img src="legend/RutadelCister_14_Apeu0.png" /></td><td>A peu</td></tr><tr><td style="text-align: center;"><img src="legend/RutadelCister_14_BTT1.png" /></td><td>BTT</td></tr></table>': layer_RutadelCister_14,'<img src="legend/ValorsNaturals_13.png" /> Valors Naturals': cluster_ValorsNaturals_13,'<img src="legend/Valorsecolgics_12.png" /> Valors ecològics': cluster_Valorsecolgics_12,'<img src="legend/ValorhistricReligisisimblic_11.png" /> Valor històric. Religiós i simbòlic': cluster_ValorhistricReligisisimblic_11,'<img src="legend/ValorhistricCivil_10.png" /> Valor històric. Civil': cluster_ValorhistricCivil_10,'<img src="legend/Nuclis_9.png" /> Nuclis': cluster_Nuclis_9,'<img src="legend/Construccionsdepedraseca_8.png" /> Construccions de pedra seca': cluster_Construccionsdepedraseca_8,'<img src="legend/Miradors_7.png" /> Miradors': cluster_Miradors_7,'<img src="legend/Itineraris_6.png" /> Itineraris': layer_Itineraris_6,'<img src="legend/Conjuntmonumental_5.png" /> Conjunt monumental': layer_Conjuntmonumental_5,'Espais d\'Interès Natural<br /><table><tr><td style="text-align: center;"><img src="legend/EspaisdIntersNatural_4_ParatgeNaturaldInterèsNacional0.png" /></td><td>Paratge Natural d\'Interès Nacional</td></tr><tr><td style="text-align: center;"><img src="legend/EspaisdIntersNatural_4_ReservaNaturalParcial1.png" /></td><td>Reserva Natural Parcial</td></tr><tr><td style="text-align: center;"><img src="legend/EspaisdIntersNatural_4_PladEspaisdInterèsNatural2.png" /></td><td>Pla d\'Espais d\'Interès Natural</td></tr></table>': layer_EspaisdIntersNatural_4,'Unitats del catàleg de paisatge<br /><table><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_AltGaià0.png" /></td><td>Alt Gaià</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_BaixaSegarra1.png" /></td><td>Baixa Segarra</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_ConcadePoblet2.png" /></td><td>Conca de Poblet</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_GarriguesBaixesiValldelCorb3.png" /></td><td>Garrigues Baixes i Vall del Corb</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_MuntanyesdePrades4.png" /></td><td>Muntanyes de Prades</td></tr><tr><td style="text-align: center;"><img src="legend/Unitatsdelcatlegdepaisatge_3_ValldelSilenci5.png" /></td><td>Vall del Silenci</td></tr></table>': layer_Unitatsdelcatlegdepaisatge_3,'<img src="legend/limits_administratius_2.png" /> limits_administratius': layer_limits_administratius_2,'<img src="legend/Municipisdelacomarca_1.png" /> Municipis de la comarca': layer_Municipisdelacomarca_1,"Mapa topográfico (pirámide topográfica)": layer_Mapatopogrficopirmidetopogrfica_0,}).addTo(map);
         setBounds();
         var i = 0;
         layer_limits_administratius_2.eachLayer(function(layer) {
@@ -1285,7 +1312,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['NOMCOMAR'] !== null?String('<div style="color: #644f43; font-size: 18pt; font-weight: bold; font-family: \'DaxPro-WideBold\', sans-serif;">' + layer.feature.properties['NOMCOMAR']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_limits_administratius_2'});
+            layer.bindTooltip((layer.feature.properties['NOMCOMAR'] !== null?String('<div style="color: #644f43; font-size: 18pt; font-weight: bold; font-family: "Dax W04 Wide Medium", sans-serif;">' + layer.feature.properties['NOMCOMAR']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_limits_administratius_2'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -1298,7 +1325,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['UNITAT'] !== null?String('<div style="color: #fafafa; font-size: 10pt; font-weight: bold; font-family: \'DaxPro-WideBold\', sans-serif;">' + layer.feature.properties['UNITAT']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Unitatsdelcatlegdepaisatge_3'});
+            layer.bindTooltip((layer.feature.properties['UNITAT'] !== null?String('<div style="color: #fafafa; font-size: 10pt; font-weight: bold; font-family: "Dax W04 Wide Medium", sans-serif;">' + layer.feature.properties['UNITAT']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Unitatsdelcatlegdepaisatge_3'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -1311,7 +1338,7 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['NOM'] !== null?String('<div style="color: #000000; font-size: 6pt; font-weight: bold; font-family: \'DaxPro-WideBold\', sans-serif;">' + layer.feature.properties['NOM']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_EspaisdIntersNatural_4'});
+            layer.bindTooltip((layer.feature.properties['NOM'] !== null?String('<div style="color: #000000; font-size: 6pt; font-weight: bold; font-family: font-family: "Dax W04 Wide Medium", sans-serif;">' + layer.feature.properties['NOM']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_EspaisdIntersNatural_4'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
@@ -1324,20 +1351,13 @@
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['NOM'] !== null?String('<div style="color: #000000; font-size: 10pt; font-weight: bold; font-family: \'DaxPro-WideBold\', sans-serif;">' + layer.feature.properties['NOM']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Monestirscistercencs_15'});
+            layer.bindTooltip((layer.feature.properties['NOM'] !== null?String('<div style="color: #000000; font-size: 10pt; font-weight: bold; font-family:font-family: "Dax W04 Wide Medium", sans-serif;">' + layer.feature.properties['NOM']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_Monestirscistercencs_15'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
               addLabel(layer, i);
               i++;
         });
-        map.addControl(new L.Control.Search({
-            layer: cluster_Municipisdelacomarca_1,
-            initial: false,
-            hideMarkerOnCollapse: true,
-            propertyName: 'NOMMUNI'}));
-        document.getElementsByClassName('search-button')[0].className +=
-         ' fa fa-binoculars';
         resetLabels([layer_limits_administratius_2,layer_Unitatsdelcatlegdepaisatge_3,layer_EspaisdIntersNatural_4,layer_Monestirscistercencs_15]);
         map.on("zoomend", function(){
             resetLabels([layer_limits_administratius_2,layer_Unitatsdelcatlegdepaisatge_3,layer_EspaisdIntersNatural_4,layer_Monestirscistercencs_15]);
