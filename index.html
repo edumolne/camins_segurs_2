@@ -482,16 +482,9 @@
         .title += 'Cerca un lloc';
         var baseMaps = {};
         var overlaysTree = [
-            {label: '<img src="legend/Oficinadeturisme_9.png"/> Oficina de turisme', layer: layer_Oficinadeturisme_9},
-            {label: '<img src="legend/Celler_8.png" /> Celler', layer: cluster_Celler_8},
-            {label: '<img src="legend/Agrobotiga_7.png" /> Agrobotiga', layer: layer_Agrobotiga_7},
-            {label: '<img src="legend/Museu_6.png" /> Museu', layer: layer_Museu_6},
-            {label: '<img src="legend/Nucli_5.png" /> Nucli', layer: cluster_Nucli_5},
-            {label: '<img src="legend/Lmitscomarcals_4.png" /> Límits comarcals', layer: layer_Lmitscomarcals_4},
-            {label: '<img src="legend/Lmitsmunicipals_3.png" /> Límits municipals', layer: layer_Lmitsmunicipals_3},
+
             {label: "Ortofotografia - ICGC (2023)", layer: layer_OrtofotografiaICGC2023_2},
-            {label: "Mapa topogràfic - ICGC (1:50.000)", layer: layer_MapatopogrficICGC150000_1},
-            {label: "Mapa híbrid (Google)", layer: layer_MapahbridGoogle_0},]
+            {label: "Mapa topogràfic - ICGC (1:50.000)", layer: layer_MapatopogrficICGC150000_1},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
             //selectorBack: false,
