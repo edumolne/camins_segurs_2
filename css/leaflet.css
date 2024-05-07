@@ -254,7 +254,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	outline: 0;
 	}
 .leaflet-container a {
-	color: #0078A8;
+	color: #a80000;
 	}
 .leaflet-container a.leaflet-active {
 	outline: 2px solid orange;
@@ -267,7 +267,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 /* general typography */
 .leaflet-container {
-	font: 12px/1.5 "Dax W04 Wide Medium";
+	font: bold 16px/1.5 "Alegreya", "Helvetica Neue", Arial, Helvetica, sans-serif;
 	}
 
 
@@ -331,7 +331,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out {
-	font: bold 18px "Dax W04 Wide Medium";
+	font: bold 18px "Alegreya", 'Lucida Console', Monaco, monospace;
 	text-indent: 1px;
 	}
 
@@ -344,16 +344,16 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .leaflet-control-layers {
 	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
-	background: #fff;
+	background: #ffffff00;
 	border-radius: 5px;
 	}
 .leaflet-control-layers-toggle {
-	background-image: url(images/layers.png);
+	background-image: url(images/icons8-menú-50.png);
 	width: 36px;
 	height: 36px;
 	}
 .leaflet-retina .leaflet-control-layers-toggle {
-	background-image: url(images/layers-2x.png);
+	background-image: url(images/icons8-menú-50.png);
 	background-size: 26px 26px;
 	}
 .leaflet-touch .leaflet-control-layers-toggle {
@@ -370,8 +370,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 .leaflet-control-layers-expanded {
 	padding: 6px 10px 6px 6px;
-	color: #fff;
-	background: #644F43;
+	color: #333;
+	background: #fff;
 	}
 .leaflet-control-layers-scrollbar {
 	overflow-y: scroll;
@@ -388,7 +388,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 .leaflet-control-layers-separator {
 	height: 0;
-	border-top: 1px solid #ddd;
+	border-top: 1px solid #dddddd00;
 	margin: 5px -10px 5px -6px;
 	}
 
@@ -401,7 +401,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 /* attribution and scale controls */
 
 .leaflet-container .leaflet-control-attribution {
-	background: #fff;
+	background: #ffffff00;
 	background: rgba(255, 255, 255, 0.7);
 	margin: 0;
 	}
@@ -503,8 +503,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	}
 .leaflet-popup-content-wrapper,
 .leaflet-popup-tip {
-	background: #644F43;
-	color: #ffffff;
+	background: white;
+	color: #333;
 	box-shadow: 0 3px 14px rgba(0,0,0,0.4);
 	}
 .leaflet-container a.leaflet-popup-close-button {
@@ -516,7 +516,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	text-align: center;
 	width: 18px;
 	height: 14px;
-	font: 16px/14px "Dax W04 Wide Medium";
+	font: 16px/14px "Alegreya", Tahoma, Verdana, sans-serif;
 	color: #c3c3c3;
 	text-decoration: none;
 	font-weight: bold;
