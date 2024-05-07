@@ -10,8 +10,8 @@ module.exports = {
 			collapsed: true,
 			expand: 'touch', // options: touch, click, anythingelse
 			position: 'topright',
-			placeholder: 'Search...',
-			errorMessage: 'Nothing found.',
+			placeholder: 'Cerca...',
+			errorMessage: 'No he trobat res. Ho he intentat però ha estat com buscar una agulla en un paller!',
 			suggestMinLength: 3,
 			suggestTimeout: 250,
 			defaultMarkGeocode: true
